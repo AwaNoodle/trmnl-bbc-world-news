@@ -1,0 +1,24 @@
+---
+strategy: polling
+no_screen_padding: 'no'
+dark_mode: 'no'
+static_data: ''
+polling_verb: get
+framework_version: 2.3.7
+serverless_language: ''
+refresh_interval_floor: ''
+polling_url: https://feeds.bbci.co.uk/news/world/rss.xml
+polling_headers: ''
+polling_body: ''
+id: 79766
+oauth_enabled: 'false'
+oauth_pkce_enabled: 'no'
+custom_fields:
+- keyname: doesnt_matter
+  name: About This Plugin
+  field_type: author_bio
+  description: BBC World News RSS Feed
+  email_address: mark.nick.turner@icloud.com
+name: BBC World News
+description: Read the BBC World feed
+refresh_interval: 15
