@@ -1,0 +1,38 @@
+{% template show_items %}
+<div class="layout">
+  <div class="columns">
+    <div class="column">
+      <div class="flex flex--col gap" data-overflow="true" data-overflow-counter="false" data-overflow-cols="1">
+        {% if items %}
+        {% for item in items limit:item_limit %}
+        <div class="item">
+          <div class="meta">
+            <!--<span class="index">{{ forloop.index }}</span>-->
+          </div>
+          <div class="content">
+            <span class="title title--small lg:title--base">{{ item.title | escape }}</span>
+            <span class="description lg:description--large clamp--none">{{ item.description | escape }}</span>
+          </div>
+        </div>
+        {% endfor %}
+        {% else %}
+        <div class="item">
+          <div class="content">
+            <span class="title title--small lg:title--base">No headlines available</span>
+            <span class="description lg:description--large">Could not fetch top stories at this time.</span>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endtemplate %}
+
+{% template footer %}
+<div class="title_bar">
+  <img class="image" src={{ feed.image }} alt="BBC Logo" style="width: 50px; height: auto; object-fit: contain; margin-right: 8px;">
+  <span class="title">{{ trmnl.plugin_settings.instance_name | default: "BBC World News" }}</span>
+  <span class="instance">Latest News</span>
+</div>
+{% endtemplate %}
