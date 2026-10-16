@@ -4,7 +4,7 @@ no_screen_padding: 'no'
 dark_mode: 'no'
 static_data: ''
 polling_verb: get
-framework_version: 2.3.7
+framework_version: 3.4.3
 serverless_language: ''
 refresh_interval_floor: ''
 polling_url: https://feeds.bbci.co.uk/news/world/rss.xml
