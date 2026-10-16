@@ -5,6 +5,8 @@ A [TRMNL](https://trmnl.com) plugin for ePaper displays, connected by
 
 <img width="150" alt="image" src="https://trmnl.com/images/brand/badges/light/works-with-trmnl/trmnl-badge-works-with-light.svg" />
 
+![BBC World News on a TRMNL device (full layout)](docs/screenshot-full.png)
+
 ### Develop locally
 
 Templates and settings live in [`src/`](src/), ready for [trmnlp](https://github.com/usetrmnl/trmnlp):
